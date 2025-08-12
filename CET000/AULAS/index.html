@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Aulas - CET1011</title>
+  <title>Aulas - CET1012</title> <!-- Corrigi título para CET1012 -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -63,7 +63,7 @@
 </head>
 <body>
   <header>
-    <h1>Aulas - CET1011</h1>
+    <h1>Aulas - CET1012</h1>
   </header>
 
   <main>
@@ -82,18 +82,19 @@
   </main>
 
   <script>
-    // Lista de arquivos de aula
+    // Lista de arquivos de aula incluindo o Jupyter Notebook
     const arquivos = [
-      "Aula1_CET000.pdf",
-      "Aula2_CET000.pdf",
-      "Aula3_CET000.pdf",
-      "Aula4_CET000.pdf",
-      "Aula5_CET000.pdf",
-      "Aula6_CET000.pdf",
-      "Aula7_CET000.pdf",
-      "Aula8_CET000.pdf",
-      "Aula9_CET000.pdf",
-      "Aula10_CET000.pdf",
+      "Aula_1-0_Redes_Neurais_Apresentacao.ipynb",  // Notebook
+      "Aula_1-1_Redes_Neurais_Apresentacao.ipynb", // Notebook
+      "Aula_1-2_Redes_Neurais_Exercicios.ipynb", // Notebook
+      "Aula_1-3_Redes_Neurais_Exercicios.ipynb", // Notebook
+      "Aula_1-4_Redes_Neurais_Exercicios.ipynb", // Notebook
+      "Aula5_CET1012.pdf",
+      "Aula6_CET1012.pdf",
+      "Aula7_CET1012.pdf",
+      "Aula8_CET1012.pdf",
+      "Aula9_CET1012.pdf",
+      "Aula10_CET1012.pdf"
     ];
 
     const fileList = document.getElementById("fileList");
@@ -109,10 +110,11 @@
       btn.textContent = "Abrir";
       btn.onclick = () => {
         const ext = file.split('.').pop().toLowerCase();
-        if (ext === "pdf" || ext === "docx") {
+        if (["pdf", "docx", "ipynb"].includes(ext)) {
+          // Abre o arquivo em nova aba
           window.open(file, "_blank");
         } else {
-          alert("Formato não suportado. Apenas PDF e DOCX.");
+          alert("Formato não suportado. Apenas PDF, DOCX e Jupyter Notebook (.ipynb).");
         }
       };
       tdAction.appendChild(btn);
@@ -122,6 +124,13 @@
       fileList.appendChild(tr);
     });
   </script>
+
+  <!--
+    IMPORTANTE:
+    Dentro do notebook Aula_0_CET1012.ipynb, referencie as imagens usando caminho relativo, por exemplo:
+    ../img/nome-da-imagem.png
+
+    Isso porque o notebook está em CET1012/AULAS/ e as imagens em CET1012/img/
+  -->
 </body>
 </html>
-
