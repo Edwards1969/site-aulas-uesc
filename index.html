@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Portal de Aulas - UESC</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    /* Barra superior */
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #004080;
+        padding: 10px;
+        height: 100px;
+    }
+    .topbar .left img {
+        height: 80px;
+    }
+    .topbar .center img {
+        height: 90px;
+        border-radius: 6px;
+        object-fit: cover;
+    }
+    .topbar .right img {
+        height: 80px;
+    }
+
+    /* Conteúdo */
+    .content {
+        padding: 20px;
+        overflow-x: auto;
+    }
+
+    /* Tabela */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: white;
+    }
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background-color: #004080;
+        color: white;
+    }
+    td a {
+        color: #004080;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    td a:hover {
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<!-- Barra Superior -->
+<div class="topbar">
+    <div class="left">
+        <img src="/img/logo_uesc.png" alt="Logo UESC">
+    </div>
+    <div class="center">
+        <img src="/img/arte_central.png" alt="Arte Central">
+    </div>
+    <div class="right">
+        <img src="/img/logo_grupo.png" alt="Logo Grupo de Pesquisa">
+    </div>
+</div>
+
+<!-- Conteúdo -->
+<div class="content">
+    <h1 style="color:#004080;">Portal de Aulas - UESC</h1>
+    <table>
+        <tr>
+            <th>Disciplina</th>
+            <th>Aulas</th>
+            <th>Exercícios</th>
+            <th>Slides</th>
+            <th>Vídeos</th>
+            <th>Entrar</th>
+        </tr>
+        <tr>
+            <td>CET1011 - Engenharia Auxiliada por Computador</td>
+            <td><a href="CET1011/AULAS/">Aulas</a></td>
+            <td><a href="CET1011/EXERCICIOS/">Exercícios</a></td>
+            <td><a href="CET1011/SLIDES/">Slides</a></td>
+            <td><a href="CET1011/VIDEOS/">Vídeos</a></td>
+            <td><a href="CET1011/index.html" style="color: green;">Entrar</a></td>
+        </tr>
+        <tr>
+            <td>CET1012 - Modelagem, Simulação e Otimização de Processos Químicos</td>
+            <td><a href="CET1012/AULAS/">Aulas</a></td>
+            <td><a href="CET1012/EXERCICIOS/">Exercícios</a></td>
+            <td><a href="CET1012/SLIDES/">Slides</a></td>
+            <td><a href="CET1012/VIDEOS/">Vídeos</a></td>
+            <td><a href="CET1012/index.html" style="color: green;">Entrar</a></td>
+        </tr>
+        <tr>
+            <td>CET990 - Instrumentação e Controle de Qualidade</td>
+            <td><a href="CET990/AULAS/">Aulas</a></td>
+            <td><a href="CET990/EXERCICIOS/">Exercícios</a></td>
+            <td><a href="CET990/SLIDES/">Slides</a></td>
+            <td><a href="CET990/VIDEOS/">Vídeos</a></td>
+            <td><a href="CET990/index.html" style="color: green;">Entrar</a></td>
+        </tr>
+        <tr>
+            <td>CET999 - Introdução a Controle de Processos</td>
+            <td><a href="CET999/AULAS/">Aulas</a></td>
+            <td><a href="CET999/EXERCICIOS/">Exercícios</a></td>
+            <td><a href="CET999/SLIDES/">Slides</a></td>
+            <td><a href="CET999/VIDEOS/">Vídeos</a></td>
+            <td><a href="CET999/index.html" style="color: green;">Entrar</a></td>
+        </tr>
+        <tr>
+            <td>CET000 - Grupo de Pesquisa - SIMCOP</td>
+            <td><a href="CET000/AULAS/">Aulas</a></td>
+            <td><a href="CET000/EXERCICIOS/">Exercícios</a></td>
+            <td><a href="CET000/SLIDES/">Slides</a></td>
+            <td><a href="CET000/VIDEOS/">Vídeos</a></td>
+            <td><a href="CET000/index.html" style="color: green;">Entrar</a></td>
+        </tr>
+        <!-- Adicione aqui as demais disciplinas seguindo o mesmo padrão -->
+    </table>
+</div>
+
+</body>
+</html>
