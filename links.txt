@@ -1,3 +1,51 @@
+Atualização GuitHub
+
+Passos para atualizar o GitHub após modificações locais
+
+1.Verificar o status do repositório
+
+git status
+
+Mostra quais arquivos foram modificados, adicionados ou removidos.
+................................................
+
+2.Adicionar os arquivos modificados/novos para o próximo commit
+
+-> Para adicionar todos os arquivos (modificados e novos):
+
+git add .
+
+..............................................
+3. Criar um commit com uma mensagem que explique a alteração
+
+git commit -m "Mensagem clara e objetiva sobre o que foi modificado/adicionado"
+
+.................................................
+4. Enviar (push) as alterações para o repositório remoto no GitHub
+
+git push origin main
+
+-> Supondo que sua branch principal seja main. Se for outra, substitua.
+
+........................................
+Resumo simplificado:
+
+git status
+
+git add .
+
+git commit -m "Descrição das alterações"
+
+git push origin main
+
+.................................
+Se você ainda não configurou o repositório remoto, faça isso uma vez só (substitua pela URL correta do seu repositório):
+
+git remote add origin https://github.com/Edwards1969/site-aulas-uesc.git
+
+
+
+
 link para criar os códigos para a página de aulas.
 
 https://chatgpt.com/share/6894e3cb-7a1c-800f-9e7a-f7d4c84e15ee
