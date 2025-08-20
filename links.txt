@@ -37,6 +37,13 @@ git add .
 git commit -m "Descrição das alterações"
 
 git push origin main
+.......................
+
+git add . → Colocar todos os arquivos novos e modificados no stage.
+
+git commit -m "..." → Gravar a alteração no repositório local.
+
+git push origin main → Enviar para o GitHub.
 
 .................................
 Se você ainda não configurou o repositório remoto, faça isso uma vez só (substitua pela URL correta do seu repositório):
