@@ -46,6 +46,19 @@ git commit -m "..." → Gravar a alteração no repositório local.
 git push origin main → Enviar para o GitHub.
 
 .................................
+# Remove o arquivo do índice do Git (não apaga do computador)
+git rm --cached CET000/Aula_1-1_Redes_Neurais_Apresentacao.ipynb
+
+# Adiciona a mudança
+git add .gitignore
+
+# Faz commit
+git commit -m "Ignorar notebook de aulas privadas"
+
+# Envia para o GitHub
+git push
+
+.................................
 Se você ainda não configurou o repositório remoto, faça isso uma vez só (substitua pela URL correta do seu repositório):
 
 git remote add origin https://github.com/Edwards1969/site-aulas-uesc.git

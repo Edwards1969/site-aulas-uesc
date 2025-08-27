@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Exercícios - CET1011</title>
+  <title>Aulas - CET001</title> <!-- Corrigi título para CET001 -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,7 +11,7 @@
       background-color: #f4f4f4;
     }
     header {
-      background-color: #ff9800;
+      background-color: #28a745;
       color: white;
       padding: 20px;
       text-align: center;
@@ -37,7 +37,7 @@
       background-color: #f2f2f2;
     }
     button {
-      background-color: #ff9800;
+      background-color: #28a745;
       color: white;
       border: none;
       padding: 8px 12px;
@@ -45,7 +45,7 @@
       cursor: pointer;
     }
     button:hover {
-      background-color: #e68900;
+      background-color: #218838;
     }
     .voltar {
       display: inline-block;
@@ -63,11 +63,11 @@
 </head>
 <body>
   <header>
-    <h1>Exercícios - CET1011</h1>
+    <h1>Aulas - CET1012</h1>
   </header>
 
   <main>
-    <h2>Lista de Exercícios</h2>
+    <h2>Lista de Aulas</h2>
     <table>
       <thead>
         <tr>
@@ -82,16 +82,18 @@
   </main>
 
   <script>
-    // Lista de arquivos de exercícios
+    // Lista de arquivos de aula incluindo o Jupyter Notebook
     const arquivos = [
-      "CET1011_Exercicio_P1_pecas.pdf", //Adicionado em 25/08/2025
-      "Exercicio_02_CET1011.pdf",
-      "Exercicio_03_CET1011.pdf",
-      "Exercicio_04_CET1011.pdf",
-      "Exercicio_05_CET1011.pdf",
-      "Exercicio_06_CET1011.pdf",
-      "Exercicio_07_CET1011.pdf",
-      "Exercicio_08_CET1011.pdf",
+      "Aula_Programacao_Python_1.ipynb",  // Notebook
+      "Aula_Programacao_Python_2.ipynb", // Notebook
+      "Aula_Programacao_Python_3.ipynb", // Notebook
+      "Aula_Programacao_Python_4.ipynb", // Notebook
+      "Aula_Programacao_Python_5.ipynb", // Notebook
+      "Aula_Programacao_Python_6.ipynb", // Notebook
+      "Aula_Programacao_Python_7.ipynb", // Notebook
+      "Aula_Programacao_Python_9.ipynb", // Notebook
+      "Aula_Programacao_Python_7.ipynb", // Notebook
+      "Aula_Programacao_Python_7.ipynb", // Notebook
     ];
 
     const fileList = document.getElementById("fileList");
@@ -107,10 +109,11 @@
       btn.textContent = "Abrir";
       btn.onclick = () => {
         const ext = file.split('.').pop().toLowerCase();
-        if (ext === "pdf" || ext === "docx") {
+        if (["pdf", "docx", "ipynb"].includes(ext)) {
+          // Abre o arquivo em nova aba
           window.open(file, "_blank");
         } else {
-          alert("Formato não suportado. Apenas PDF e DOCX.");
+          alert("Formato não suportado. Apenas PDF, DOCX e Jupyter Notebook (.ipynb).");
         }
       };
       tdAction.appendChild(btn);
@@ -120,8 +123,13 @@
       fileList.appendChild(tr);
     });
   </script>
+
+  <!--
+    IMPORTANTE:
+    Dentro do notebook Aula_001.ipynb, referencie as imagens usando caminho relativo, por exemplo:
+    ../img/nome-da-imagem.png
+
+    Isso porque o notebook está em CET001/AULAS/ e as imagens em CET001/img/
+  -->
 </body>
 </html>
-
-
-
