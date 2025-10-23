@@ -46,7 +46,7 @@ git commit -m "..." → Gravar a alteração no repositório local.
 git push origin main → Enviar para o GitHub.
 
 .................................
-# Remove o arquivo do índice do Git (não apaga do computador)
+#  (não apaga do computador)Remove o arquivo do índice do Git
 git rm --cached CET000/Aula_1-1_Redes_Neurais_Apresentacao.ipynb
 
 # Adiciona a mudança
