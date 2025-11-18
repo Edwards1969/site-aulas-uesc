@@ -34,7 +34,15 @@ RELATORIOS_IC
 
 
 %--------------------------------------------------
-%   Disciplina CET1011 
+%   Disciplina CET1012
 %---------------------------------------------------
 Aula_18_CET1012_Separacao_componentes_petroleo.ipynb
+%---------------------------------------------------
+
+%--------------------------------------------------
+%   Disciplina CET1011
+%---------------------------------------------------
+CET1011_Cálculo_do_volume_hidrociclone.ipynb
+CET1011_Principio_de_cavalieri_volume_cubo.ipynb
+CET1011_Prova_P3_gabarito_matemático.ipynb
 %---------------------------------------------------
