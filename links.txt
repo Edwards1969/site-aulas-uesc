@@ -38,7 +38,7 @@ git commit -m "Descrição das alterações"
 
 git push origin main
 .......................
-
+git commit -m "Atualização de Aula999 - Apostila", exercício separadores 
 git add . → Colocar todos os arquivos novos e modificados no stage.
 
 git commit -m "..." → Gravar a alteração no repositório local.
