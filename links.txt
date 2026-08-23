@@ -34,7 +34,7 @@ git status
 
 git add .
 
-git commit -m "Descrição das alterações"
+git commit -m "Alteração em 23082026"
 
 git push origin main
 .......................
