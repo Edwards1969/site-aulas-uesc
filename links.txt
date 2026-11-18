@@ -34,7 +34,7 @@ git status
 
 git add .
 
-git commit -m "Alteração em 07112026"
+git commit -m "Alteração de CET1011"
 
 git push origin main
 
