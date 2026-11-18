@@ -34,7 +34,7 @@ git status
 
 git add .
 
-git commit -m "Alteração de CET1011"
+git commit -m "Adição de Gabrito Prova P3 CET1006"
 
 git push origin main
 
